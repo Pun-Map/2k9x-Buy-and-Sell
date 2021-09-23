@@ -6,7 +6,7 @@ body{
 #wrapper{
     text-align: center;
     margin: 0 80px;
-    width: 1206px;
+    max-width: 1206px;
 }
 
 #header h1{
@@ -48,7 +48,7 @@ body{
 
 #wp-content .text{
     /* căn giữa - kích thước khối */
-    width: 770px;
+    max-width: 770px;
     margin: 10px auto;
     line-height: 20px;
     color: #b8b8bc;
@@ -56,50 +56,48 @@ body{
 
 #wp-content article{
     display: flex;
-    flex-wrap: nowrap;
-    margin-top: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#wp-content .box{
-    /* 1 box = 382px */
-    /* dư 60px  */
-    border: 1px solid #273c75;
-    border-radius: 20px 0px 20px 0px;
-    width: 382px;
-    margin: 30px;
-    background-color: #b2bec3;
-    transition-duration: .3s;
-}
-
-#wp-content .box .box-details{
-    margin: 15px 30px;
-}
-#wp-content .box .box-details h1{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#wp-content .box:hover{
-    transition: 0.5s;
-    border-radius: 0px;
-    /* background-color: #dff9fb; */
-    box-shadow: -5px 5px 30px #d63031;
-}
-#wp-content .box:hover .box-details h1{
-    font-weight: normal;
-    transition: 0.3s;
-}
-#wp-content .box:hover .box-details a{
-    color:#e84118;
-    font-weight: bold;
-    transition: 0.6s;
-}
+    #wp-content .box{
+        /* 1 box = 382px */
+        /* dư 60px  */
+        border: 1px solid #273c75;
+        border-radius: 20px 0px 20px 0px;
+        width: 334px;
+        margin: 10px 30px 10px 30px;
+        background-color: #b2bec3;
+        transition-duration: .3s;
+    }
+        #wp-content .box .box-details{
+            margin: 15px 30px;
+        }
+        #wp-content .box .box-details h1{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+            #wp-content .box:hover{
+                transition: 0.5s;
+                border-radius: 0px;
+                /* background-color: #dff9fb; */
+                box-shadow: -5px 5px 30px #d63031;
+            }
+            #wp-content .box:hover .box-details h1{
+                font-weight: normal;
+                transition: 0.3s;
+            }
+            #wp-content .box:hover .box-details a{
+                color:#e84118;
+                font-weight: bold;
+                transition: 0.6s;
+            }
 
 #wp-content .picture-cu{
     overflow: hidden;
     border: 1px solid black;
     border-radius: 20px;
 }
-#wp-content .picture-cu img{
-    width: 1206px;
-}
+    #wp-content .picture-cu img{
+        max-width: 100%;
+    }
