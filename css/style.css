@@ -1,0 +1,129 @@
+*{box-sizing: border-box;  font-family: 'Roboto', sans-serif;}
+body{background: #161623; color: #b8b8bc;}
+#wrapper{
+    margin: 0px auto;
+    max-width: 1080px;
+}
+
+/* ========== HEADER,FOOTER ========== */
+#header,#footer{
+    background: #353b48;
+    color: #fff;
+    text-align: center;
+}
+
+    #header{
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 0px 0px 20px 20px;
+
+        margin-bottom: 20px;
+    }
+    #footer{
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px 10px 0px 0px;
+
+        margin-top: 30px;
+    }
+        #footer a{
+            font-weight: bold;
+            color: #fff;
+        }
+
+/* ========== WP-CONTENT ========== */
+#wp-content{
+    padding: 0px 15px;
+    min-height: 300px;
+}
+
+/* ----- SIDEBAR ----- */
+#sidebar{
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 30px;
+}
+    .box{
+        text-align: center;
+        flex-basis: 330px;
+        min-height: 70px;
+        padding: 15px 5px;
+        margin: 0px 10px;
+        background: #bdc3c7;
+        border-radius: 30px 0px 30px 0px;
+        transition-duration: .3s;
+    }
+    .box:hover{
+        border-radius: 0px 30px 0px 30px;
+        transition: 0.6s;
+    }
+    .box:hover a{
+        font-weight: bold;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+        .box h3{
+            color: #e74c3c;
+            font-size: 18px;
+        }
+        .box a{
+            font-size: 14px;
+            text-transform: capitalize;
+            transition-duration: 0.3s;
+        }
+
+
+/* ----- CONTENT ----- */
+.text{
+    display: flex;
+    justify-content: center;
+
+}
+    .text p{
+        flex-basis: 760px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+/* ----- Ảnh Logo Group Discord -----  */
+.picture{
+    min-width: 128px;
+    max-height: 128px;
+    overflow: hidden;
+}
+    .picture img{
+        border-radius: 20px;
+        max-width: 100%;
+    }
+/* ----- Phân chia vị trí hiển thị ----- */
+.title-product-group{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 30px 0px 10px 0px;
+}
+
+.product-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    .group{
+        flex-basis: 525px;
+        display: flex;
+        margin-bottom: 30px;
+    }
+        .group-text{
+            padding: 10px 10px 0px 15px;
+            line-height: 18px;
+        }
+        .group-text a{
+            display: inline-block;
+            padding: 10px 0px 0px 20px;
+            color: #fff;
+        }
+        .group-text a:hover{
+            color: #b8b8bc;
+        }
