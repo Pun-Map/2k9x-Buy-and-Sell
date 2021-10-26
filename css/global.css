@@ -1,9 +1,16 @@
-.color-fb{
-    color: #0652DD;
+.text-red{
+    color: #e74c3c;
 }
-.color-discord{
-    color: black;
+.text-yellow{
+    color: #f1c40f;
 }
-.color-blacklist{
-    color: #EA2027;
+.text-underline{
+    text-decoration: underline;
+}
+.text-bold{
+    font-weight: bold;
+}
+hr{
+    max-width: 800px;
+    margin-top: 50px;
 }

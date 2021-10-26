@@ -1,103 +1,129 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    background-color: #161623;
-}
+*{box-sizing: border-box;  font-family: 'Roboto', sans-serif;}
+body{background: #161623; color: #b8b8bc;}
 #wrapper{
-    text-align: center;
-    margin: 0 80px;
-    max-width: 1206px;
+    margin: 0px auto;
+    max-width: 1080px;
 }
 
-#header h1{
-    background-color: #353b48;
-    padding: 15px 0px;
-    color:#b8b8bc;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 0 0 10px 10px;
-}
-#header strong{
-    color: #e84118;
-}
-#header strong:hover{
-    text-shadow: -5px 5px 30px #d63031;
-}
-
-#footer p{
-    background-color: #353b48;
-    padding: 10px 0px;
-    color: #dcdde1;
-    font-size: 14px;
-}
-#footer a{
-    text-decoration: none;
-    color: #dcdde1;
-    font-weight: bold;
-
-}
-#footer a:hover{
+/* ========== HEADER,FOOTER ========== */
+#header,#footer{
+    background: #353b48;
     color: #fff;
-    transition: 0.5s;
+    text-align: center;
 }
 
+    #header{
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 0px 0px 20px 20px;
+
+        margin-bottom: 20px;
+    }
+    #footer{
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px 10px 0px 0px;
+
+        margin-top: 30px;
+    }
+        #footer a{
+            font-weight: bold;
+            color: #fff;
+        }
+
+/* ========== WP-CONTENT ========== */
 #wp-content{
-    margin: 25px 0px 40px 0px;
+    padding: 0px 15px;
+    min-height: 300px;
 }
 
-#wp-content .text{
-    /* căn giữa - kích thước khối */
-    max-width: 770px;
-    margin: 10px auto;
-    line-height: 20px;
-    color: #b8b8bc;
-}
-
-#wp-content article{
+/* ----- SIDEBAR ----- */
+#sidebar{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+
+    margin-bottom: 30px;
 }
-    #wp-content .box{
-        /* 1 box = 382px */
-        /* dư 60px  */
-        border: 1px solid #273c75;
-        border-radius: 20px 0px 20px 0px;
-        width: 334px;
-        margin: 10px 30px 10px 30px;
-        background-color: #b2bec3;
+    .box{
+        text-align: center;
+        flex-basis: 330px;
+        min-height: 70px;
+        padding: 15px 5px;
+        margin: 0px 10px;
+        background: #bdc3c7;
+        border-radius: 30px 0px 30px 0px;
         transition-duration: .3s;
     }
-        #wp-content .box .box-details{
-            margin: 15px 30px;
+    .box:hover{
+        border-radius: 0px 30px 0px 30px;
+        transition: 0.6s;
+    }
+    .box:hover a{
+        font-weight: bold;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+        .box h3{
+            color: #e74c3c;
+            font-size: 18px;
         }
-        #wp-content .box .box-details h1{
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 5px;
+        .box a{
+            font-size: 14px;
+            text-transform: capitalize;
+            transition-duration: 0.3s;
         }
-            #wp-content .box:hover{
-                transition: 0.5s;
-                border-radius: 0px;
-                /* background-color: #dff9fb; */
-                box-shadow: -5px 5px 30px #d63031;
-            }
-            #wp-content .box:hover .box-details h1{
-                font-weight: normal;
-                transition: 0.3s;
-            }
-            #wp-content .box:hover .box-details a{
-                color:#e84118;
-                font-weight: bold;
-                transition: 0.6s;
-            }
 
-#wp-content .picture-cu{
-    overflow: hidden;
-    border: 1px solid black;
-    border-radius: 20px;
+
+/* ----- CONTENT ----- */
+.text{
+    display: flex;
+    justify-content: center;
+
 }
-    #wp-content .picture-cu img{
+    .text p{
+        flex-basis: 760px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+/* ----- Ảnh Logo Group Discord -----  */
+.picture{
+    min-width: 128px;
+    max-height: 128px;
+    overflow: hidden;
+}
+    .picture img{
+        border-radius: 20px;
         max-width: 100%;
     }
+/* ----- Phân chia vị trí hiển thị ----- */
+.title-product-group{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin: 30px 0px 10px 0px;
+}
+
+.product-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    .group{
+        flex-basis: 525px;
+        display: flex;
+        margin-bottom: 30px;
+    }
+        .group-text{
+            padding: 10px 10px 0px 15px;
+            line-height: 18px;
+        }
+        .group-text a{
+            display: inline-block;
+            padding: 10px 0px 0px 20px;
+            color: #fff;
+        }
+        .group-text a:hover{
+            color: #b8b8bc;
+        }
