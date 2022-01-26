@@ -5,140 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1f0c562af2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="icon" href="assets/img/tristan-yajuu-bour-illustration8.jpg">
-    <title>HHiepz - Profile</title>
+    <!-- Liên Kết CSS  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/avatar.jpg">
+    <!-- Liên Kết Gì Đó -->
     <meta name="google-site-verification" content="P5HeyhfdBUymVDhmbgOuhZD0m750VPbUtCzecO4jRyI" />
+    <script async src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script>
+    <title>HHiepz - Profile</title>
 </head>
 
 <body>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            background: #34495e;
-            color: #f5f6fa;
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            margin: 0;
-            font-size: 16px;
-        }
-
-        /* ========== HEADER ==========  */
-        #header {
-            background: #2d3436;
-            padding: 0.875rem 1.87500rem;
-        }
-
-        .main-menu {
-            display: flex;
-            font-size: 1.8rem;
-        }
-
-        .main-menu>li>a {
-            color: #dcdde1;
-            padding: 0.6875rem 1.25rem;
-            transition: all 0.25s;
-        }
-
-        .main-menu>li:hover>a {
-            background: black;
-            opacity: 0.8;
-            transform: rotate(200deg);
-        }
-
-        .main-menu>li>a>i {
-            transition: transform 0.25s;
-        }
-
-        .main-menu>li:hover>a>i {
-            transform: rotate(200deg);
-        }
-
-        /* ========== FOOTER ==========  */
-        #footer {
-            background: #2d3436;
-            padding: 0.625rem;
-            font-size: 0.875rem;
-            text-align: center;
-            margin-top: auto;
-        }
-
-        #footer>a {
-            color: #ff7675;
-            font-weight: 500;
-            transition: color 0.25s;
-        }
-
-        #footer>a:hover {
-            color: #fbc531;
-        }
-
-        /* ========== CONTENT ==========  */
-        #content {
-            background: url(assets/img/tristan-yajuu-bour-illustration8.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 100%;
-            padding: 14.0625rem 1.87500rem;
-            text-align: center;
-            font-size: 2rem;
-            line-height: 2.5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .contact {
-            color: #fbc531;
-            font-weight: 600;
-        }
-
-        /* ====================  */
-        .text-bold {
-            font-weight: bold;
-        }
-
-        .text-underline {
-            text-decoration: underline;
-        }
-    </style>
-
-    <!-- HEADER  -->
-    <div id="header">
-        <ul class="main-menu">
-            <li>
-                <a href="https://www.facebook.com/Nhoc.Hiepz/"> <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://discord.gg/qCydDgDa5D"> <i class="fab fa-discord"></i> </a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- CONTENT  -->
-    <div id="content">
-        <div>
-            <p class="text-Some-Work">Cậu bé lười biếng với nhiều <span class="text-bold text-underline">Tham
-                    Vọng</span>...</p>
-            <p class="contact">Criphiepz@gmail.com</p>
+    <div id="wrapper">
+        <div class="title">
+            <h1>
+                HHiepz - Profile
+            </h1>
         </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-        2021 © Tạo bởi <a href="https://www.facebook.com/Nhoc.Hiepz/" target="_blank">HHiepz or CHiepz</a>
-
+        <div id="wp-content">
+            <div class="cart">
+                <div class="cart__img">
+                    <img src="./assets/img/avatar.jpg" alt="Images_avatar">
+                </div>
+                <div class="cart__content">
+                    <p href="" class="contact">Details</p>
+                    <div class="social">
+                        <div class="social__item">
+                            <a href="https://www.facebook.com/Nhoc.Hiepz/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="social__item">
+                            <a href="https://discord.com/invite/qCydDgDa5D">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
